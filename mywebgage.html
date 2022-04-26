@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UFT-8">
+		<script src="https://kit.fontawesome.com/80baea3ac8.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="./mywebgage.css">
+		<link rel="stylesheet" type="text/css" href="./jquery.convform.css">
+		<script type="text/javascript" src="js/jquery.1.js"></script>
+		<script type="text/javascript" src="js/jquery.convform.js"></script>
+		<script type="text/javascript" src="js/costume.js"></script>
+		<head>
+		
+</head>
+	</head>  
+	<style>
+	body{
+		background-image: -webkit-linear-gradient(left,blue,red);
+	}
+		
+	</style>
+	<body>
+		<div class="container">
+		<i class="fa-solid fa-comment"></i>
+		</div>
+		<div class="chat_box">
+			<div  class="conv-form-wrapper">
+			<form action="" methode="GET class="hidden">
+				<select name="programmer" data-conv-question="here our three option select one.">
+					<option value="1">!bestseller</option>
+					<option value="2">!bestreaded</option>
+					<option value="3">!suggest</option>
+				</select>
+				<div data-conv-fork="programmer">
+					<div data-conv-case="1">
+		 				<input type="thought" data-conv-question="It end with us: a noval is the best seller book we have" >
+					</div>
+					<div data-conv-case="2">
+						<input name="thought" data-conv-question="quran is the most readed book ">
+					</div>
+					<div data-conv-case="3">
+						<select name="categorie" data-conv-question="select the categorie">
+							<option value="A">Horror</option>
+							<option value="B">Drama</option>
+							<option value="C">Funny</option></select>
+						<div data-conv-fork="categorie">
+							<div data-conv-case="A">
+		 						<input type="text" data-conv-question="I suggest you to read Dracula if you're intrest in Horror books" >
+							</div>
+							<div data-conv-case="B">
+								<input name="thought" data-conv-question="I suggest you to read Harry Potter if you're intrest in Drama book ">
+							</div>
+							<div data-conv-case="C">
+								<input name="thought" data-conv-question="I suggest you to read Le Guide du voyageur galactique if you're intrest in funny book">
+							</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>	
+	</body>
+</html>
